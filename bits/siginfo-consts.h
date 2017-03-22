@@ -106,8 +106,12 @@ enum
 {
   TRAP_BRKPT = 1,		/* Process breakpoint.  */
 #  define TRAP_BRKPT	TRAP_BRKPT
-  TRAP_TRACE			/* Process trace trap.  */
+  TRAP_TRACE,			/* Process trace trap.  */
 #  define TRAP_TRACE	TRAP_TRACE
+  TRAP_BRANCH,			/* Process branch trap. */
+# define TRAP_BRANCH	TRAP_BRANCH
+  TRAP_HWBKPT			/* hardware breakpoint/watchpoint  */
+# define TRAP_HWBKPT	TRAP_HWBKPT
 };
 # endif
 
